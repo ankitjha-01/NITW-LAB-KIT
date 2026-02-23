@@ -22,7 +22,6 @@ int main() {
         send(sock, buffer, strlen(buffer), 0);
         if (recv(sock, buffer, 1024, 0) <= 0) break;
         cout << "Result: " << buffer << endl;
-    
     }
 
     close(sock);
